@@ -73,7 +73,7 @@
     { "@type": "Offer", "name": "Compra y configuración de móvil nuevo", "price": "79", "priceCurrency": "EUR" },
     { "@type": "Offer", "name": "Copia de seguridad de fotos", "price": "29", "priceCurrency": "EUR" },
     { "@type": "Offer", "name": "Instalación de Alexa o Smart TV", "price": "29", "priceCurrency": "EUR" },
-    { "@type": "Offer", "name": "Plan Tranquilidad (mensual)", "price": "19.90", "priceCurrency": "EUR" }
+    { "@type": "Offer", "name": "Plan Tranquilidad (mensual)", "price": "29.99", "priceCurrency": "EUR" }
   ]
 }
 </script>
@@ -92,7 +92,7 @@
     {
       "@type": "Question",
       "name": "¿Cuánto cuesta?",
-      "acceptedAnswer": { "@type": "Answer", "text": "La visita a domicilio cuesta 45 € e incluye hasta 1 hora de trabajo y el diagnóstico. Hay extras opcionales con precio fijo (móvil nuevo +79 €, copia de fotos +29 €, Alexa o Smart TV +29 €) y un Plan Tranquilidad de 19,90 €/mes. Sabrás el precio antes de empezar, sin sorpresas." }
+      "acceptedAnswer": { "@type": "Answer", "text": "La visita a domicilio cuesta 45 € e incluye hasta 1 hora de trabajo y el diagnóstico. Hay extras opcionales con precio fijo (móvil nuevo +79 €, copia de fotos +29 €, Alexa o Smart TV +29 €) y un Plan Tranquilidad de 29,99 €/mes. Sabrás el precio antes de empezar, sin sorpresas." }
     },
     {
       "@type": "Question",
@@ -285,7 +285,7 @@
 
   /* ---------- About ---------- */
   .about-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:48px;align-items:center;}
-  .about-photo{width:100%;height:420px;border-radius:26px;object-fit:cover;display:block;}
+  .about-photo{width:100%;height:420px;border-radius:26px;object-fit:cover;object-position:center top;display:block;background:var(--linen);}
   .about-grid h2{font-size:40px;letter-spacing:-0.03em;}
   .about-grid p{font-size:19px;color:var(--graphite);font-weight:500;margin-top:18px;}
   .about-sign{margin-top:22px;font-weight:800;font-size:20px;display:flex;align-items:center;gap:10px;}
@@ -643,16 +643,16 @@
       <div class="plan-info">
         <span class="badge" style="background:var(--celeste);color:#fff;">Para hijos e hijas</span>
         <h3>Plan Tranquilidad</h3>
-        <p>Para no estar pendiente: atención prioritaria por WhatsApp, una visita de revisión al mes y precio reducido en lo que vaya surgiendo. Tú tranquilo, nosotros nos ocupamos.</p>
+        <p>Para no estar pendiente: atención prioritaria por WhatsApp y <b style="color:#fff">20 % de descuento en todas las visitas</b> a domicilio. Tú tranquilo, nosotros nos ocupamos.</p>
       </div>
       <div class="plan-price">
-        <div class="price-tag">19,90 €<span> /mes</span></div>
+        <div class="price-tag">29,99 €<span> /mes</span></div>
         <a class="btn btn-green" href="https://wa.me/34644391910?text=Hola,%20me%20interesa%20el%20Plan%20Tranquilidad%20de%20Telenieto." target="_blank" rel="noopener noreferrer">Quiero el plan</a>
         <span class="plan-note">Sin permanencia, cancela cuando quieras</span>
       </div>
     </div>
 
-    <p class="price-note">La visita se cobra siempre, porque nos desplazamos hasta su casa. Si hiciera falta más tiempo, otra visita o algún extra, <b>te lo decimos antes de continuar</b> — nunca hay sorpresas en la factura.</p>
+    <p class="price-note">Si necesitaras más tiempo o algún extra, <b>te lo comentamos antes de continuar</b>, igual que haría cualquier profesional. Nunca hay sorpresas en la factura.</p>
   </div>
 </section>
 
@@ -679,7 +679,7 @@
 <!-- ============ ABOUT ============ -->
 <section class="sec" id="sobre">
   <div class="wrap about-grid">
-    <img class="about-photo" src="adrian.jpg" alt="Adrián, fundador de Telenieto" loading="lazy" width="420" height="420" />
+    <img class="about-photo" src="adrian.jpg" alt="Adrián, fundador de Telenieto" width="420" height="420" />
     <div>
       <div class="kicker">Quiénes somos</div>
       <h2>Hola, soy Adrián, el nieto que va a casa</h2>
@@ -740,11 +740,11 @@
       </details>
       <details class="faq">
         <summary>¿Cuánto cuesta?<span class="chev"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg></span></summary>
-        <div class="ans">La visita a domicilio cuesta 45 € e incluye hasta 1 hora de trabajo y el diagnóstico. Hay extras opcionales con precio fijo (móvil nuevo +79 €, copia de fotos +29 €, Alexa o Smart TV +29 €) y un Plan Tranquilidad de 19,90 €/mes para tenerlo todo cubierto. Sabrás el precio antes de empezar, sin sorpresas.</div>
+        <div class="ans">La visita a domicilio cuesta 45 € e incluye hasta 1 hora de trabajo y el diagnóstico. Hay extras opcionales con precio fijo (móvil nuevo +79 €, copia de fotos +29 €, Alexa o Smart TV +29 €) y un Plan Tranquilidad de 29,99 €/mes para tenerlo todo cubierto. Sabrás el precio antes de empezar, sin sorpresas.</div>
       </details>
       <details class="faq">
         <summary>¿Y si no se puede resolver del todo?<span class="chev"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg></span></summary>
-        <div class="ans">Vamos igualmente y la visita se cobra (45 €), porque nos desplazamos hasta su casa. Si para resolverlo del todo hiciera falta más tiempo, otra visita o algún material, te lo decimos antes de continuar para que lo decidas tú. Nunca hay sorpresas en la factura.</div>
+        <div class="ans">Al igual que cualquier otro profesional, si algo requiere más tiempo o una solución diferente te avisaremos de eso y te recomendaremos la mejor opción: aumentar el tiempo de visita, realizar otra visita, o lo que mejor encaje. Siempre con tu aprobación antes de continuar.</div>
       </details>
       <details class="faq">
         <summary>Mis padres no se manejan nada, ¿les vais a hablar en difícil?<span class="chev"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg></span></summary>
@@ -810,7 +810,7 @@
     </div>
     <div class="foot-bottom">
       <span>© 2026 Telenieto · Asistencia tecnológica a domicilio en Alcorcón</span>
-      <span><a href="#" style="color:var(--stone)">Aviso legal</a> · <a href="#" style="color:var(--stone)">Privacidad</a></span>
+      <span><a href="aviso-legal.html" style="color:var(--stone)">Aviso legal</a> · <a href="privacidad.html" style="color:var(--stone)">Privacidad</a></span>
     </div>
   </div>
 </footer>
