@@ -1,0 +1,5 @@
+.image-slots.state.json
+uploads/
+screenshots/
+*.DS_Store
+Thumbs.db
