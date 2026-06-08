@@ -1,0 +1,301 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]: Asistencia tecnológica a domicilio en Alcorcón · 45 € la visita (hasta 1 hora) · Sin permanencia
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Telenieto inicio" [ref=e5] [cursor=pointer]:
+        - /url: "#"
+        - text: Telenieto
+      - generic [ref=e7]:
+        - link "Llamar al 644 39 19 10" [ref=e8] [cursor=pointer]:
+          - /url: tel:+34644391910
+          - img [ref=e9]
+        - link "WhatsApp" [ref=e11] [cursor=pointer]:
+          - /url: https://wa.me/34644391910?text=Hola,%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20telenieto%20para%20ayudar%20a%20mis%20padres.
+          - img [ref=e12]
+          - text: WhatsApp
+  - generic [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]: El nieto que viene a ayudar a tus padres
+      - heading "¿Tus padres te llaman cada día porque no les funciona el móvil?" [level=1] [ref=e19]
+      - paragraph [ref=e20]: Vamos a su casa, se lo dejamos todo funcionando y se lo explicamos con paciencia. Servicio a domicilio en Alcorcón por 45 € la visita.
+      - generic [ref=e21]:
+        - link "Escríbenos por WhatsApp" [ref=e22] [cursor=pointer]:
+          - /url: https://wa.me/34644391910?text=Hola,%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20telenieto%20para%20ayudar%20a%20mis%20padres.
+          - img [ref=e23]
+          - text: Escríbenos por WhatsApp
+        - link "Llamar ahora" [ref=e25] [cursor=pointer]:
+          - /url: tel:+34644391910
+          - img [ref=e26]
+          - text: Llamar ahora
+      - paragraph [ref=e28]:
+        - text: 45 € la visita, hasta 1 hora
+        - text: Precio cerrado antes de empezar
+        - text: Sin permanencia
+    - generic [ref=e31]:
+      - img "Joven ayudando a persona mayor con el móvil en Alcorcón" [ref=e32]
+      - generic [ref=e33]:
+        - generic [ref=e34]: M
+        - generic [ref=e35]:
+          - generic [ref=e36]: Mamá
+          - generic [ref=e37]: ¡Ya sé hacer videollamada a los nietos! 😊
+      - generic [ref=e38]:
+        - generic [ref=e39]: T
+        - generic [ref=e40]:
+          - generic [ref=e41]: Telenieto
+          - generic [ref=e42]: Mañana a las 11h estoy en casa de tus padres 👍
+  - generic [ref=e44]:
+    - generic [ref=e45]:
+      - generic [ref=e46]: Lo que resolvemos
+      - heading "Lo que hacemos por tus padres (y tú dejas de hacer)" [level=2] [ref=e47]
+      - paragraph [ref=e48]: Si tiene pantalla y les frustra, lo arreglamos. Estas son las cosas que más nos piden.
+    - generic [ref=e49]:
+      - article [ref=e50]:
+        - img [ref=e52]
+        - heading "Móvil y WhatsApp" [level=3] [ref=e55]
+        - paragraph [ref=e56]: Fotos, audios, videollamadas con los nietos y esas fotos que nunca encuentran.
+      - article [ref=e57]:
+        - img [ref=e59]
+        - heading "Banca y Bizum" [level=3] [ref=e62]
+        - paragraph [ref=e63]: Pagar sin miedo, revisar la cuenta y dejar la app del banco lista y segura.
+      - article [ref=e64]:
+        - img [ref=e66]
+        - heading "La tele y los mandos" [level=3] [ref=e69]
+        - paragraph [ref=e70]: Dejar de pelearse con 3 mandos y ver lo que quieren, cuando quieren.
+      - article [ref=e71]:
+        - img [ref=e73]
+        - heading "Ordenador y correo" [level=3] [ref=e76]
+        - paragraph [ref=e77]: Abrir el email, imprimir sin dramas y recuperar esas contraseñas perdidas.
+      - article [ref=e78]:
+        - img [ref=e80]
+        - heading "Seguridad y estafas" [level=3] [ref=e82]
+        - paragraph [ref=e83]: Les enseñamos a no caer en SMS falsos, llamadas raras y enlaces peligrosos.
+      - article [ref=e84]:
+        - img [ref=e86]
+        - heading "Lo que sea" [level=3] [ref=e88]
+        - paragraph [ref=e89]: Si tiene pantalla y les frustra, lo miramos. No hay pregunta demasiado pequeña.
+  - generic [ref=e91]:
+    - generic [ref=e92]:
+      - generic [ref=e93]: Cómo funciona
+      - heading "Así de fácil" [level=2] [ref=e94]
+    - generic [ref=e95]:
+      - generic [ref=e96]:
+        - generic [ref=e97]: "1"
+        - heading "Nos llamas o escribes" [level=3] [ref=e98]
+        - paragraph [ref=e99]: Nos cuentas qué pasa por teléfono o WhatsApp. Sin tecnicismos, en confianza.
+      - generic [ref=e100]:
+        - generic [ref=e101]: "2"
+        - heading "Vamos a su casa" [level=3] [ref=e102]
+        - paragraph [ref=e103]: A la hora que mejor les venga. Ellos no se mueven; vamos nosotros.
+      - generic [ref=e104]:
+        - generic [ref=e105]: "3"
+        - heading "Lo dejamos funcionando" [level=3] [ref=e106]
+        - paragraph [ref=e107]: Y se lo explicamos con calma, las veces que haga falta, hasta que se queden tranquilos.
+  - generic [ref=e109]:
+    - generic [ref=e110]:
+      - generic [ref=e111]: Por qué nosotros
+      - heading "No es soporte técnico. Es tranquilidad para tu familia." [level=2] [ref=e112]
+    - generic [ref=e113]:
+      - generic [ref=e114]:
+        - img [ref=e116]
+        - generic [ref=e118]:
+          - heading "Trato cercano y paciente" [level=3] [ref=e119]
+          - paragraph [ref=e120]: No hablamos en difícil. Repetimos las veces que haga falta, sin prisa.
+      - generic [ref=e121]:
+        - img [ref=e123]
+        - generic [ref=e125]:
+          - heading "Vamos a domicilio" [level=3] [ref=e126]
+          - paragraph [ref=e127]: Ellos no se mueven de casa. Nosotros llegamos a la hora acordada.
+      - generic [ref=e128]:
+        - img [ref=e130]
+        - generic [ref=e134]:
+          - heading "Transparencia total" [level=3] [ref=e135]
+          - paragraph [ref=e136]: Sabes el precio antes de empezar. Sin sorpresas y sin letra pequeña.
+      - generic [ref=e137]:
+        - img [ref=e139]
+        - generic [ref=e141]:
+          - heading "Somos de la zona" [level=3] [ref=e142]
+          - paragraph [ref=e143]: Conocemos Alcorcón, Villaviciosa de Odón y Móstoles. Estamos al lado.
+  - generic [ref=e145]:
+    - generic [ref=e146]:
+      - generic [ref=e147]: Precios
+      - heading "Un precio claro, sin sorpresas" [level=2] [ref=e148]
+      - paragraph [ref=e149]: "Como un fontanero: una tarifa por la visita y, si algo lleva más, te lo decimos antes de empezar. Sin cuotas ni permanencia."
+    - generic [ref=e150]:
+      - generic [ref=e151]:
+        - generic [ref=e152]: Servicio principal
+        - generic [ref=e153]: La visita a domicilio
+        - generic [ref=e154]: 45 € / visita
+        - generic [ref=e155]: Vamos a su casa en Alcorcón, vemos qué pasa y lo dejamos funcionando. Incluye hasta 1 hora de trabajo y se lo explicamos con paciencia las veces que haga falta.
+        - list [ref=e156]:
+          - listitem [ref=e157]: Diagnóstico incluido
+          - listitem [ref=e158]: Desplazamiento en Alcorcón incluido
+          - listitem [ref=e159]: Precio cerrado antes de empezar
+        - link "Reservar visita · 45 €" [ref=e160] [cursor=pointer]:
+          - /url: https://wa.me/34644391910?text=Hola,%20quiero%20reservar%20una%20visita%20de%20Telenieto%20en%20Alcorc%C3%B3n.
+      - generic [ref=e161]:
+        - heading "Extras opcionales" [level=3] [ref=e162]
+        - paragraph [ref=e163]: Trabajos concretos con precio fijo, aparte de la visita. Te decimos siempre el total antes de empezar.
+        - generic [ref=e164]:
+          - generic [ref=e165]:
+            - generic [ref=e166]: Compra y configuración de móvil nuevo
+            - generic [ref=e167]: Le ayudamos a elegirlo, lo dejamos listo y le pasamos todo del anterior.
+          - generic [ref=e168]: +79 €
+        - generic [ref=e169]:
+          - generic [ref=e170]:
+            - generic [ref=e171]: Copia de seguridad de fotos
+            - generic [ref=e172]: Sus recuerdos guardados y a salvo, aunque pierda o rompa el móvil.
+          - generic [ref=e173]: +29 €
+        - generic [ref=e174]:
+          - generic [ref=e175]:
+            - generic [ref=e176]: Instalación de Alexa o Smart TV
+            - generic [ref=e177]: Configurada del todo y enseñándole a usarla sin liarse.
+          - generic [ref=e178]: +29 €
+    - generic [ref=e179]:
+      - generic [ref=e180]:
+        - text: Para hijos e hijas
+        - heading "Plan Tranquilidad" [level=3] [ref=e181]
+        - paragraph [ref=e182]: "Para no estar pendiente: atención prioritaria por WhatsApp y 20 % de descuento en todas las visitas a domicilio. Tú tranquilo, nosotros nos ocupamos."
+      - generic [ref=e183]:
+        - generic [ref=e184]: 29,99 € /mes
+        - link "Quiero el plan" [ref=e185] [cursor=pointer]:
+          - /url: https://wa.me/34644391910?text=Hola,%20me%20interesa%20el%20Plan%20Tranquilidad%20de%20Telenieto.
+        - generic [ref=e186]: Sin permanencia, cancela cuando quieras
+    - paragraph [ref=e187]: Si necesitaras más tiempo o algún extra, te lo comentamos antes de continuar, igual que haría cualquier profesional. Nunca hay sorpresas en la factura.
+  - generic [ref=e190]:
+    - generic [ref=e191]:
+      - heading "Solo en Alcorcón (de momento)" [level=2] [ref=e192]
+      - paragraph [ref=e193]: "Empezamos en Alcorcón para llegar rápido y sin sobrecostes de desplazamiento. ¿Tus padres viven aquí y tú en otra ciudad? Perfecto: tú nos escribes y nosotros vamos a su casa."
+      - link "Vivimos en Alcorcón · Escríbenos" [ref=e194] [cursor=pointer]:
+        - /url: https://wa.me/34644391910?text=Hola,%20mis%20padres%20viven%20en%20Alcorc%C3%B3n%20y%20necesitan%20ayuda%20con%20la%20tecnolog%C3%ADa.
+    - generic [ref=e195]:
+      - generic [ref=e196]:
+        - img [ref=e198]
+        - text: Alcorcón
+      - paragraph [ref=e200]: Pronto también en Villaviciosa de Odón y Móstoles.
+  - generic [ref=e202]:
+    - img "Adrián, fundador de Telenieto" [ref=e203]
+    - generic [ref=e204]:
+      - generic [ref=e205]: Quiénes somos
+      - heading "Hola, soy Adrián, el nieto que va a casa" [level=2] [ref=e206]
+      - paragraph [ref=e207]: Empecé ayudando a mis propios abuelos con el móvil y la tele, y me di cuenta de cuánta gente mayor —y cuántos hijos— pasan por lo mismo.
+      - paragraph [ref=e208]: "Telenieto nació de ahí: ir a casa, con paciencia, y dejar las cosas funcionando. Sin prisa y sin tecnicismos."
+      - generic [ref=e209]: Adrián · Telenieto
+  - generic [ref=e212]:
+    - generic [ref=e213]:
+      - generic [ref=e214]: Lo que dicen las familias
+      - heading "Hijos e hijas que ya respiran tranquilos" [level=2] [ref=e215]
+    - generic [ref=e216]:
+      - article [ref=e217]:
+        - generic [ref=e218]: ★★★★★
+        - paragraph [ref=e219]: "\"Mi madre me llamaba cuatro veces al día por el móvil. Vinieron a casa, se lo configuraron todo y ahora me llama solo para contarme cosas.\""
+        - generic [ref=e220]:
+          - generic [ref=e221]: L
+          - generic [ref=e222]:
+            - generic [ref=e223]: Laura G.
+            - generic [ref=e224]: Parque Lisboa, Alcorcón
+      - article [ref=e225]:
+        - generic [ref=e226]: ★★★★★
+        - paragraph [ref=e227]: "\"A mi padre casi le sacan 600 € con un SMS falso del banco. En una visita le enseñaron a detectar las estafas. Vale cada euro.\""
+        - generic [ref=e228]:
+          - generic [ref=e229]: J
+          - generic [ref=e230]:
+            - generic [ref=e231]: Javier M.
+            - generic [ref=e232]: Alcorcón centro
+      - article [ref=e233]:
+        - generic [ref=e234]: ★★★★★
+        - paragraph [ref=e235]: "\"Vivo fuera y no podía estar para cada problema. Ahora les escribo, van a su casa y me cuentan cómo ha ido. Una tranquilidad enorme.\""
+        - generic [ref=e236]:
+          - generic [ref=e237]: C
+          - generic [ref=e238]:
+            - generic [ref=e239]: Carmen R.
+            - generic [ref=e240]: San José de Valderas, Alcorcón
+  - generic [ref=e242]:
+    - generic [ref=e243]:
+      - generic [ref=e244]: Preguntas frecuentes
+      - heading "Lo que sueles preguntarnos" [level=2] [ref=e245]
+    - generic [ref=e246]:
+      - group [ref=e247]:
+        - generic "¿Vais a casa de mis padres?" [ref=e248] [cursor=pointer]:
+          - text: ¿Vais a casa de mis padres?
+          - img [ref=e250]
+        - generic [ref=e253]: "Sí. Nuestro servicio es principalmente a domicilio: vamos a su casa a la hora que mejor les venga, así no tienen que moverse. También resolvemos cosas sencillas por teléfono o videollamada."
+      - group [ref=e254]:
+        - generic "¿Cuánto cuesta?" [ref=e255] [cursor=pointer]:
+          - text: ¿Cuánto cuesta?
+          - img [ref=e257]
+      - group [ref=e260]:
+        - generic "¿Y si no se puede resolver del todo?" [ref=e261] [cursor=pointer]:
+          - text: ¿Y si no se puede resolver del todo?
+          - img [ref=e263]
+      - group [ref=e266]:
+        - generic "Mis padres no se manejan nada, ¿les vais a hablar en difícil?" [ref=e267] [cursor=pointer]:
+          - text: Mis padres no se manejan nada, ¿les vais a hablar en difícil?
+          - img [ref=e269]
+      - group [ref=e272]:
+        - generic "¿Puedo contratarlo yo aunque viva en otra ciudad?" [ref=e273] [cursor=pointer]:
+          - text: ¿Puedo contratarlo yo aunque viva en otra ciudad?
+          - img [ref=e275]
+      - group [ref=e278]:
+        - generic "¿En qué zonas trabajáis?" [ref=e279] [cursor=pointer]:
+          - text: ¿En qué zonas trabajáis?
+          - img [ref=e281]
+  - generic [ref=e286]:
+    - heading "Deja de ser tú quien arregla el móvil de tus padres" [level=2] [ref=e287]
+    - paragraph [ref=e288]: Escríbenos y vamos a su casa esta misma semana.
+    - generic [ref=e289]:
+      - link "Escríbenos por WhatsApp" [ref=e290] [cursor=pointer]:
+        - /url: https://wa.me/34644391910?text=Hola,%20me%20gustar%C3%ADa%20que%20fuerais%20a%20casa%20de%20mis%20padres.
+        - img [ref=e291]
+        - text: Escríbenos por WhatsApp
+      - link "Llamar al 644 39 19 10" [ref=e293] [cursor=pointer]:
+        - /url: tel:+34644391910
+    - paragraph [ref=e294]: "Atención: Lunes a viernes 9:00–20:00 · Sábados 10:00–14:00"
+  - contentinfo [ref=e295]:
+    - generic [ref=e296]:
+      - generic [ref=e297]:
+        - generic [ref=e298]:
+          - generic [ref=e299]: Telenieto
+          - paragraph [ref=e301]: El nieto que viene a ayudar a tus padres con el móvil, el banco y la tele. A domicilio en Alcorcón, con paciencia.
+        - generic [ref=e302]:
+          - heading "Servicio" [level=4] [ref=e303]
+          - link "Qué resolvemos" [ref=e304] [cursor=pointer]:
+            - /url: "#servicios"
+          - link "Cómo funciona" [ref=e305] [cursor=pointer]:
+            - /url: "#como"
+          - link "Precios" [ref=e306] [cursor=pointer]:
+            - /url: "#precios"
+          - link "Opiniones" [ref=e307] [cursor=pointer]:
+            - /url: "#opiniones"
+          - link "Preguntas frecuentes" [ref=e308] [cursor=pointer]:
+            - /url: "#faq"
+        - generic [ref=e309]:
+          - heading "Zona" [level=4] [ref=e310]
+          - link "Alcorcón" [ref=e311] [cursor=pointer]:
+            - /url: "#zonas"
+          - link "Próximamente más zonas" [ref=e312] [cursor=pointer]:
+            - /url: "#zonas"
+        - generic [ref=e313]:
+          - heading "Contacto" [level=4] [ref=e314]
+          - link "644 39 19 10" [ref=e315] [cursor=pointer]:
+            - /url: tel:+34644391910
+          - link "WhatsApp" [ref=e316] [cursor=pointer]:
+            - /url: https://wa.me/34644391910
+          - link "info@telenieto.es" [ref=e317] [cursor=pointer]:
+            - /url: mailto:info@telenieto.es
+      - generic [ref=e318]:
+        - generic [ref=e319]: © 2026 Telenieto · Asistencia tecnológica a domicilio en Alcorcón
+        - generic [ref=e320]:
+          - link "Aviso legal" [ref=e321] [cursor=pointer]:
+            - /url: aviso-legal.html
+          - text: ·
+          - link "Privacidad" [ref=e322] [cursor=pointer]:
+            - /url: privacidad.html
+  - generic [ref=e323]:
+    - link "Llamar" [ref=e324] [cursor=pointer]:
+      - /url: tel:+34644391910
+      - img [ref=e325]
+      - text: Llamar
+    - link "WhatsApp" [ref=e327] [cursor=pointer]:
+      - /url: https://wa.me/34644391910?text=Hola,%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20telenieto.
+      - img [ref=e328]
+      - text: WhatsApp
