@@ -237,6 +237,9 @@
 </script>
 
 <style>
+  /* Evita scroll horizontal en cualquier viewport */
+  html{overflow-x:clip;}
+
   :root{
     --cream:#f9f4f2;
     --white:#ffffff;
@@ -498,6 +501,10 @@
     /* Nav */
     .nav-links,.nav-phone span{display:none;}
     .nav-inner{height:62px;}
+    /* Fix: botón WhatsApp en nav más compacto para que quepa */
+    .nav-right{gap:8px;}
+    .nav-right .btn{padding:11px 14px;font-size:15px;gap:7px;}
+    .nav-right .btn svg{width:17px;height:17px;}
 
     /* Hero */
     .hero h1{font-size:34px;letter-spacing:-0.03em;}
@@ -549,6 +556,11 @@
     .zones{padding:32px 22px;border-radius:22px;}
     .zones h2{font-size:28px;}
     .zone-pill{font-size:18px;padding:16px 18px;min-width:0;}
+    /* Fix: CSS Grid min-width:auto — los hijos del grid no se limitan solos */
+    .zones > *{min-width:0;}
+    /* Fix: botón en zones con white-space:nowrap desbordaba el grid cell */
+    .zones .btn{white-space:normal;width:100%;text-align:center;font-size:16px;padding:14px 18px;}
+    .zones .btn svg{flex:none;}
 
     /* About */
     .about-photo{height:280px;border-radius:20px;}
