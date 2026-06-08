@@ -1,41 +1,100 @@
 Options -Indexes
 
-# HTTPS redirect
+# ─── Redirects ────────────────────────────────────────────────────────────────
+
 RewriteEngine On
+
+# HTTP → HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# www.telenieto.es -> telenieto.es
+# www.telenieto.es → telenieto.es
 RewriteCond %{HTTP_HOST} ^www\.telenieto\.es$ [NC]
 RewriteRule ^(.*)$ https://telenieto.es/$1 [L,R=301]
 
-# telenieto.com -> telenieto.es
+# telenieto.com → telenieto.es
 RewriteCond %{HTTP_HOST} ^(?:www\.)?telenieto\.com$ [NC]
 RewriteRule ^(.*)$ https://telenieto.es/$1 [L,R=301]
 
-# Security headers
+# ─── Security headers ──────────────────────────────────────────────────────────
+
 <IfModule mod_headers.c>
+  # Tipo de contenido
   Header always set X-Content-Type-Options "nosniff"
-  Header always set X-Frame-Options "SAMEORIGIN"
-  Header always set X-XSS-Protection "1; mode=block"
+
+  # Clickjacking
+  Header always set X-Frame-Options "DENY"
+
+  # XSS — desactivado en favor de CSP (recomendado en OWASP)
+  Header always unset X-XSS-Protection
+  Header always set X-XSS-Protection "0"
+
+  # Referrer
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
-  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+  # Permisos de hardware
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=()"
+
+  # HSTS — 2 años, incluye subdominios, listo para preload list de Chrome
+  Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+
+  # Cross-Origin — allow-popups para que WhatsApp/tel links funcionen correctamente
+  Header always set Cross-Origin-Opener-Policy "same-origin-allow-popups"
+  Header always set Cross-Origin-Resource-Policy "same-origin"
+
+  # CSP — estricto, adaptado al sitio estático con Google Fonts y Unsplash
+  Header always set Content-Security-Policy "default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'none';"
 </IfModule>
 
-# Cache static assets
+# ─── Caché de activos estáticos ───────────────────────────────────────────────
+
 <IfModule mod_expires.c>
   ExpiresActive On
-  ExpiresByType image/jpeg "access plus 1 year"
-  ExpiresByType image/png "access plus 1 year"
-  ExpiresByType image/svg+xml "access plus 1 year"
-  ExpiresByType image/webp "access plus 1 year"
-  ExpiresByType image/avif "access plus 1 year"
-  ExpiresByType text/css "access plus 1 day"
-  ExpiresByType application/javascript "access plus 1 day"
+
+  # HTML — corto para reflejar cambios rápido
   ExpiresByType text/html "access plus 1 hour"
+
+  # Imágenes — un año (son inmutables con hash o nombre fijo)
+  ExpiresByType image/jpeg   "access plus 1 year"
+  ExpiresByType image/png    "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/webp   "access plus 1 year"
+  ExpiresByType image/avif   "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Fuentes
+  ExpiresByType font/woff2   "access plus 1 year"
+  ExpiresByType font/woff    "access plus 1 year"
+
+  # CSS/JS
+  ExpiresByType text/css                "access plus 1 day"
+  ExpiresByType application/javascript  "access plus 1 day"
+
+  # XML / feeds
+  ExpiresByType application/xml  "access plus 1 day"
+  ExpiresByType text/xml         "access plus 1 day"
 </IfModule>
 
-# Compress
+<IfModule mod_headers.c>
+  <FilesMatch "\.(jpg|jpeg|png|gif|svg|webp|avif|ico|woff2|woff)$">
+    Header append Cache-Control "immutable"
+  </FilesMatch>
+</IfModule>
+
+# ─── Compresión gzip ──────────────────────────────────────────────────────────
+
 <IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/css application/javascript text/xml application/xml
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ─── Keep-Alive ───────────────────────────────────────────────────────────────
+
+<IfModule mod_headers.c>
+  Header set Connection keep-alive
 </IfModule>

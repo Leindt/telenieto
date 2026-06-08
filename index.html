@@ -34,7 +34,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<!-- Fuente no bloqueante: se precarga y aplica async para no bloquear FCP/LCP -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" onload="this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" /></noscript>
 <link rel="dns-prefetch" href="https://wa.me" />
 <link rel="dns-prefetch" href="https://images.unsplash.com" />
 <link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1758691031979-6128d4029604?w=1100&q=80&auto=format&fit=crop" />
@@ -126,7 +128,71 @@
     { "@type": "Offer", "name": "Copia de seguridad de fotos", "price": "29", "priceCurrency": "EUR" },
     { "@type": "Offer", "name": "Instalación de Alexa o Smart TV", "price": "29", "priceCurrency": "EUR" },
     { "@type": "Offer", "name": "Plan Tranquilidad (mensual)", "price": "29.99", "priceCurrency": "EUR" }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "18"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+34644391910",
+    "contactType": "customer service",
+    "availableLanguage": { "@type": "Language", "name": "Spanish" },
+    "areaServed": { "@type": "City", "name": "Alcorcón" }
+  },
+  "sameAs": [
+    "https://wa.me/34644391910"
   ]
+}
+</script>
+
+<!-- Structured data: WebPage + Speakable (para Google AI Overviews y asistentes de voz) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://telenieto.es/#webpage",
+  "url": "https://telenieto.es/",
+  "name": "Telenieto · Ayuda a mayores con el móvil, el banco y la tele a domicilio en Alcorcón",
+  "description": "Asistencia tecnológica a domicilio para personas mayores en Alcorcón. Móvil, WhatsApp, banca online, Smart TV, ordenador. 45 € la visita.",
+  "isPartOf": { "@id": "https://telenieto.es/#website" },
+  "about": { "@id": "https://telenieto.es/#business" },
+  "author": { "@id": "https://telenieto.es/#adrian" },
+  "inLanguage": "es-ES",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".hero h1", ".hero-sub", ".hero-trust", ".sec-head", ".faq-wrap .ans"]
+  }
+}
+</script>
+
+<!-- Structured data: Person (E-E-A-T — quién hay detrás del servicio) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://telenieto.es/#adrian",
+  "name": "Adrián",
+  "jobTitle": "Fundador y técnico de Telenieto",
+  "worksFor": { "@id": "https://telenieto.es/#business" },
+  "description": "Especialista en asistencia tecnológica para personas mayores en Alcorcón. Fundó Telenieto después de ayudar a sus propios abuelos con el móvil y la televisión.",
+  "knowsAbout": [
+    "Smartphones Android e iOS",
+    "WhatsApp y videollamadas",
+    "Banca online y Bizum",
+    "Smart TV y configuración de televisores",
+    "Seguridad digital para personas mayores",
+    "Phishing, smishing y vishing"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Alcorcón",
+    "addressRegion": "Madrid",
+    "addressCountry": "ES"
+  }
 }
 </script>
 
@@ -806,7 +872,7 @@
 <!-- ============ ABOUT ============ -->
 <section class="sec" id="sobre">
   <div class="wrap about-grid">
-    <img class="about-photo" src="adrian.jpg" alt="Adrián, fundador de Telenieto" width="420" height="420" />
+    <img class="about-photo" src="adrian.jpg" alt="Adrián, fundador de Telenieto, asistencia tecnológica a domicilio en Alcorcón" width="420" height="420" loading="lazy" decoding="async" />
     <div>
       <div class="kicker">Quiénes somos</div>
       <h2>Hola, soy Adrián, el nieto que va a casa</h2>
